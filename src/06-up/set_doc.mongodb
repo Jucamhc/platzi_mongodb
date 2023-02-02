@@ -1,0 +1,17 @@
+use("platzi_store")
+
+db.products.updateOne(
+    {_id:2},
+    {
+        $set: {
+            name: 'change name',
+            price: 20000,
+            tangs: [
+                "A",
+                "B",
+                "C"
+            ]
+        }
+    }
+    
+    )

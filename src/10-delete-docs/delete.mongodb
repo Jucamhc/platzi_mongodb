@@ -1,0 +1,24 @@
+use("platzi_store")
+
+
+
+//Para eliminar un Id de la tabla de producion
+/* db.products.deleteOne({
+    _id: objectId("54654654")
+}) */
+
+
+
+/* db.products.deleteOne({
+    _id: 1
+}) */
+
+
+//Elimina todos los que tengan el precio  de 100
+/* db.products.deleteMany({price: 100})  */
+
+//Elimina todo de la tabla 
+db.products.drop()
+
+
+db.products.find()

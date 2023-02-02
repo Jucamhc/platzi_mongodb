@@ -1,0 +1,37 @@
+use("platzi_store")
+
+
+// Usinf $gt (>)  &  $gte (>=)
+
+
+// El mayor que 
+//db.inventory.find({ qty: { $gt: 20 }})
+
+// Mayor igual que 
+//db.inventory.find({ qty: { $gte: 20 }})
+
+
+//Using $lt (<) & $lte (<=)
+
+//Menor que 20
+//db.inventory.find({ qty: { $lt: 20 }})
+
+//Menor que igual a  20
+//db.inventory.find({ qty: { $lte: 20 }})
+
+
+//JOIN 
+/* db.inventory.find({ 
+    "item.code": "123",
+    qty: { $gte: 20, $lte: 25 }
+    }) */
+
+//JOIN trae los codigos que no sean 123 y que esten en el rango
+db.inventory.find({ 
+    "item.code": { $ne: "123"},
+    qty: { $gte: 20, $lte: 25 }
+    })
+
+
+
+//db.inventory.find()

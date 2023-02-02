@@ -1,0 +1,12 @@
+use("platzi_store")
+
+db.products.updateOne(
+    {_id: ObjectId("63d58de042d86e6b25eb714e")},
+    {
+        $set: {
+            price: 20000,  
+        }
+    }
+    );
+
+db.products.find();

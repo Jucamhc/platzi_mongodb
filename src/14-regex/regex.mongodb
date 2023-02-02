@@ -1,0 +1,28 @@
+use("platzi_store")
+
+
+//db.inventory.find({ "item.description": "Single line description." })
+
+
+//db.inventory.find({ "item.description": { $regex: /line/ }})
+
+//SE LE PONE AL FINAL LA LETRA i PARA NO SEA SENCIBLE CON LAS MAYUSCULA
+//db.inventory.find({ "item.description": { $regex: /LINE/i }})
+
+
+//QUE BUSQUE AL FINAL DEL TEXTO LA PALABRA LINE CON $
+//db.inventory.find({ "item.description": { $regex: /LINE$/i }})
+
+
+//QUE INICIE CON LA PALABRA O CON LA LETRA ^
+db.inventory.find({ "item.description": { $regex: /^SINGLE/i }})
+
+
+//PARA QUE BUSQUE EN SALTOS DE LINEA ADICIONALES SE AGREFA LA m 
+// AL LADO DE LA i
+db.inventory.find({ "item.description": { $regex: /^s/im }})
+
+//db.inventory.find()
+
+// Para desarrollar un buen buscador debemos utilizar una erramienta que 
+// Mongo da  mongodb atlas search

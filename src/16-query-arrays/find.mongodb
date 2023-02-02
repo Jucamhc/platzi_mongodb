@@ -1,0 +1,7 @@
+
+use("platzi_store")
+db.survey.find()
+
+
+use("platzi_store")
+db.inventory.find()
