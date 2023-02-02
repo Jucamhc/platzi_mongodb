@@ -2,4 +2,5 @@
 curso donde aprendo como conectarme y administrar una base de datos Nosql, entendiendo un paradigma distinto a SQL 
 
 
-[diploma-mongodb.pdf](https://github.com/Kamilo2251/platzi_mongodb/files/10564158/diploma-mongodb.pdf)
+![image](https://user-images.githubusercontent.com/54044345/216214063-b0999446-8e8b-4c17-8598-13a7b802a8d2.png)
+
